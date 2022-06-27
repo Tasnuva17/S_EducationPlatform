@@ -79,3 +79,9 @@ D:\.net practice\EducationPlatform\EducationPlatform\obj\Debug\EducationPlatform
 D:\.net practice\EducationPlatform\EducationPlatform\obj\Debug\EducationPlatform.csproj.CopyComplete
 D:\.net practice\EducationPlatform\EducationPlatform\obj\Debug\EducationPlatform.dll
 D:\.net practice\EducationPlatform\EducationPlatform\obj\Debug\EducationPlatform.pdb
+D:\.net practice\EducationPlatform\EducationPlatform\bin\Syncfusion.Compression.Base.dll
+D:\.net practice\EducationPlatform\EducationPlatform\bin\Syncfusion.Licensing.dll
+D:\.net practice\EducationPlatform\EducationPlatform\bin\Syncfusion.Pdf.Base.dll
+D:\.net practice\EducationPlatform\EducationPlatform\bin\Syncfusion.Compression.Base.xml
+D:\.net practice\EducationPlatform\EducationPlatform\bin\Syncfusion.Licensing.xml
+D:\.net practice\EducationPlatform\EducationPlatform\bin\Syncfusion.Pdf.Base.xml

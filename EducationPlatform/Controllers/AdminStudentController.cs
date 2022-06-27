@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using EducationPlatform.Auth;
 using EducationPlatform.Models;
+using System.Net.Mail;
 
 namespace EducationPlatform.Controllers
 {
@@ -90,6 +91,33 @@ namespace EducationPlatform.Controllers
             student.Education = obj.Education;
 
             db.SaveChanges();
+
+            //-------mail work----------------
+
+            MailMessage mail = new MailMessage();
+            mail.To.Add(obj.Email);
+            mail.From = new MailAddress("19-40649-1@student.aiub.edu");
+            mail.Subject = "Your Profile has updated by Admin of ABC Education";
+            string Body = "Hello sir <br/>" +
+                           "Your profile has been updated by our admin panel <br/>"+
+                           "Your new username or mail:"+obj.Email+"<br/>"+
+                           "Your new password:"+obj.Password + "<br/>" +
+                           "Please login to check the update" + "<br/>" +
+                           "<br/>"+
+                           "<b>Best Regards</b><br/>"+
+                           "Admin Panel <br/>"+
+                           "ABC Education";
+                            
+            mail.Body = Body;
+            mail.IsBodyHtml = true;
+            SmtpClient smtp = new SmtpClient();
+            smtp.Host = "smtp-mail.outlook.com";
+            smtp.Port = 587;
+            smtp.UseDefaultCredentials = false;
+            smtp.Credentials = new System.Net.NetworkCredential("19-40649-1@student.aiub.edu", "*noor*jaja*9027*"); // Enter seders User name and password  
+            smtp.EnableSsl = true;
+            smtp.Send(mail);
+
             return RedirectToAction("StudentList");
         }
 
