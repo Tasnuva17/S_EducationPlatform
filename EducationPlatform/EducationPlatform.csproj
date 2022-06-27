@@ -147,6 +147,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\M_MentorController.cs" />
     <Compile Include="Controllers\M_StudentController.cs" />
+    <Compile Include="Controllers\S_StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -308,6 +309,9 @@
     <Content Include="Views\Admin\AdminUpdate.cshtml" />
     <Content Include="Views\M_Mentor\M_MentorInformation.cshtml" />
     <Content Include="Views\M_Student\Index.cshtml" />
+    <Content Include="Views\S_Student\Registration.cshtml" />
+    <Content Include="Views\S_Student\Login.cshtml" />
+    <Content Include="Views\S_Student\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

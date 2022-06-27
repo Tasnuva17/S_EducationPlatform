@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+
+
+
+<center>
+    <h2>Student Registration</h2>
+    @TempData["msg"];
+    <form action="" method="post">
+
+        <input type="text" class="form-control" name="Name" placeholder="Name" /><br />
+        <input type="text" class="form-control" name="Address" placeholder="Address" /><br />
+        <input type="email" class="form-control" name="Email" placeholder="Email" /><br />
+        <input type="text" class="form-control" name="Phone" placeholder="Phone" /><br />
+        <input type="text" class="form-control" name="Education" placeholder="Education" /><br />
+        <input type="text" class="form-control" name="Institution" placeholder="Institution" /><br />
+        <input type="password" class="form-control" name="Password" placeholder="Password" /><br />
+        <input type="text" class="form-control" name="Gender" placeholder="Gender" /><br />
+
+
+        <input type="submit" value="Register" class="btn btn-primary" />
+    </form>
+</center>
