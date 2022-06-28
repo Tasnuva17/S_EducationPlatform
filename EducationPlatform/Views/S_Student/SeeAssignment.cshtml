@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "SeeAssignment";
+}
+
+<h2>SeeAssignment</h2>
+@foreach (var a in Model)
+{
+
+    <li>
+        <ol>
+            <b>Assignment Id:</b>@a.Id
+            <b> Question:</b>
+            @a.Question
+            <br />
+            <b> Date:</b> @a.Date
+            <br />
+
+            <button><a href="~/S_Student/UploadAssignment/@a.Id" class="btn btn-warning">upload your answer</a></button>
+
+
+            <br />
+            <br />
+        </ol>
+
+    </li>
+
+}

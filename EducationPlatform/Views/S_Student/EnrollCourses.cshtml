@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "EnrollCourses";
+}
+
+<h2>EnrollCourses</h2>
+
+<ol>
+    @foreach (var a in Model)
+    {
+
+        <li>CourseId: @a.CourseId <button><a href="~/S_Student/CourseDetail/@a.CourseId" class="btn btn-warning">Detail</a></button> </li>
+
+    }
+</ol>

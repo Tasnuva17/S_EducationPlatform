@@ -312,6 +312,14 @@
     <Content Include="Views\S_Student\Registration.cshtml" />
     <Content Include="Views\S_Student\Login.cshtml" />
     <Content Include="Views\S_Student\Index.cshtml" />
+    <Content Include="Views\S_Student\Transaction.cshtml" />
+    <Content Include="Views\S_Student\PaymentHistory.cshtml" />
+    <Content Include="Views\S_Student\EnrollCourses.cshtml" />
+    <Content Include="Views\S_Student\CourseDetail.cshtml" />
+    <Content Include="Views\S_Student\CourseModule.cshtml" />
+    <Content Include="Views\S_Student\SeeAssignment.cshtml" />
+    <Content Include="Views\S_Student\UploadAssignment.cshtml" />
+    <Content Include="Views\S_Student\VideoConference.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

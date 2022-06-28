@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "CourseModule";
+}
+
+<h2>CourseModule</h2>
+<ol>
+    @foreach (var a in Model)
+    {
+
+        <li>
+            <b> Module:</b>@a.Module
+            <br />
+            <b> Date:</b>@a.Date
+            <br />
+            <b> CourseId:</b> @a.CourseId
+            <br />
+            <b>Material:</b><button><a href=" @a.Material" class="btn btn-warning">click here to see the uploaded video</a></button>
+            <br />
+            <b>Description:</b> @a.Description
+            <br />
+            <br />
+
+        </li>
+
+    }
+</ol>

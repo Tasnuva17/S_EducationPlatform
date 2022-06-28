@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "PaymentHistory";
+}
+
+    <h2>PaymentHistory</h2>
+    <ol>
+        @foreach (var a in Model)
+        {
+
+            <li>CourseId: @a.CourseId --- Institution Id: @a.InstitutionId --- Transaction num: @a.BkashTransactionNumber --- CoursePrice: @a.CoursePrice --- AmountPaid:@a.CreditedAmount  </li>
+
+        }
+    </ol>
+
+
+

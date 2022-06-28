@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "CourseDetail";
+}
+@TempData["CerMsg"]
+<h2>CourseDetail</h2>
+<h5>Course Id: @ViewBag.Crseid</h5>
+<h5>Course Name:@ViewBag.CrseName </h5>
+<h5>Detail:@ViewBag.Detail</h5>
+<h5>Institution Id:@ViewBag.insId</h5>
+
+<button><a href="~/S_Student/CourseModule/@ViewBag.Crseid" class="btn btn-warning">See Module</a></button>
+<button><a href="~/S_Student/SeeAssignment/@ViewBag.Crseid" class="btn btn-warning">See Your Assignment</a></button>
+<button><a href="~/S_Student/VideoConference/@ViewBag.Crseid" class="btn btn-warning">Video Counceling</a></button>
+<button><a href="~/S_Student/ApplyingCertificate/@ViewBag.Crseid" class="btn btn-warning">Apply for certificate</a></button>
